@@ -1,0 +1,26 @@
+<header>
+    <nav>
+        <ul>
+            <% NAVMENU.forEach(function(nav){ %>
+                <li><a href="<%- nav.url %>"><%- nav.content.title %></a></li>
+            <% }); %>
+        </ul>
+    </nav>
+
+I am header 
+    <% if(language === 'uk') { %>
+        <% if(page==='index') {%>
+            <a href="/ru/">uk</a>
+        <% } else { %>
+            <a href="/ru/<%-page %>/">uk</a>
+        <% }  %>
+    
+    <% } else { %>  
+        <% if(page==='index') {%>
+            <a href="/">uk</a>
+        <% } else { %>
+            <a href="/<%-page %>/">uk</a>
+        <% }  %>
+      
+    <% } %>
+</header>
