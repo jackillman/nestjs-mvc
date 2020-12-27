@@ -20,12 +20,12 @@ export const NAVMENU = {
         },
         url:`/ru/about/`  
     },{
-        name:`products`,
+        name:`channels`,
         content:{
-             title:`products ру`
+             title:`channels ру`
           
         },
-        url:`/ru/products/`  
+        url:`/ru/channels/`  
     }
 ],
     uk:[{
@@ -49,12 +49,12 @@ export const NAVMENU = {
         },
         url:`/about/`  
     },{
-        name:`products`,
+        name:`channels`,
         content:{
-             title:`products UK`
+             title:`channels UK`
           
         },
-        url:`/products/`  
+        url:`/channels/`  
     }
 ],
 }

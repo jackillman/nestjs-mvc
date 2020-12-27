@@ -7,12 +7,12 @@ import { HomeModule } from './pages/home/home.module';
 import { AboutModule } from './pages/about/about.module';
 import { IndexModule } from './pages/main/index.module';
 
-import { ProductsModule } from './pages/products/products.module';
+import { ChannelsModule } from './pages/channels/channels.module';
 import { ConfigModule } from '@nestjs/config';
 const ENV = process.env.NODE_ENV;
 console.log("ENV",ENV)
 @Module({
-  imports: [HomeModule, AboutModule,IndexModule,ProductsModule, 
+  imports: [HomeModule, AboutModule,IndexModule,ChannelsModule, 
   ConfigModule.forRoot({
     // envFilePath: '.env.dev',
     envFilePath: `.env.${process.env.NODE_ENV}`,
